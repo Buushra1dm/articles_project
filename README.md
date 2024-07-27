@@ -21,8 +21,33 @@ Streamlit
 Joblib
 OpenAI API key
 
+### Usage
+## Text Classification
+Navigate to the التصنيف page using the sidebar.
+Enter the Arabic article text in the text area provided.
+Click the صنّف button to get the predicted category of the article.
+## Text Summarization
+Go to the التلخيص page using the sidebar.
+Enter the text you want to summarize in the text area.
+Press the لخّص button to generate a summary of the input text.
+## Quiz Generation
+Access the الاختبار page via the sidebar.
+Input text in the provided text area to generate questions.
+Click أنشئ الأسئلة to create a set of questions based on the input.
+Use the اسأل button to display a question, and select an answer from the options.
+Submit your answer with سلّم الإجابة to check if it is correct.
+Use إنهاء الاختبار to view your final score and reset the quiz.
+### Architecture
+## Text Classification Architecture
+Utilizes a pre-trained machine learning model loaded using Joblib.
+Classifies input text into one of seven categories: Culture, Finance, Medical, Politics, Religion, Sports, and Tech.
+## Text Summarization Architecture
+Leverages OpenAI's GPT-3.5 Turbo model to generate summaries.
+Sends text inputs to the API and retrieves summarized text, with adjustable parameters such as temperature and max tokens.
+## Quiz Generation Architecture
+Generates quiz questions from predefined templates.
+Randomly selects questions and options to create an interactive quiz experience.      
 ### DEMO
-
 
 https://github.com/user-attachments/assets/5fe48caa-ddee-4428-a187-b67ec118e81d
 
